@@ -38,5 +38,10 @@ namespace _2022_Portal_NER_Scrum_H47.Controllers
         {
             return View();
         }
+
+        public IActionResult Map()
+        {
+            return View();
+        }
     }
 }

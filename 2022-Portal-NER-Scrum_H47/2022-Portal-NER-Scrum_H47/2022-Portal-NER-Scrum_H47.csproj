@@ -6,6 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Images\Eolien.png" />
+    <None Include="wwwroot\Images\Gaz.png" />
+    <None Include="wwwroot\Images\Map.png" />
+    <None Include="wwwroot\Images\mini-hydro.png" />
+    <None Include="wwwroot\Images\PV.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
