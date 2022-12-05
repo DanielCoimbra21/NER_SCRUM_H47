@@ -3,10 +3,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .centeredDiv {
     margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 10%;
 }
 
 a.navbar-brand {
