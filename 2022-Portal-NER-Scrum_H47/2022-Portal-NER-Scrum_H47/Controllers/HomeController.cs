@@ -46,7 +46,7 @@ namespace _2022_Portal_NER_Scrum_H47.Controllers
 
         public IActionResult Graph()
         {
-            return View();
+            return View(); 
         }
     }
 }
