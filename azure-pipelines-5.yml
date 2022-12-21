@@ -35,6 +35,9 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     
+
+- task: PublishBuildArtifacts@1
+
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
@@ -43,7 +46,7 @@ steps:
     WebAppName: 'NREPortalProd'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
   
-- task: PublishBuildArtifacts@1
+
 
 
 
