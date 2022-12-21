@@ -42,6 +42,18 @@ steps:
     WebAppName: 'NREPortalProd'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 
-- task: PublishBuildArtifacts@1
 
+
+- task: PublishSymbols@2 
+  displayName: 'Publish symbols path' 
+  inputs:
+    SearchPattern: '**\bin\**\*.pdb' 
+    PublishSymbols: false 
+    continueOnError: true 
+
+- task: PublishBuildArtifacts@1 
+  displayName: 'Publish Artifact: drop' 
+  inputs: 
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    condition: succeededOrFailed()
 
