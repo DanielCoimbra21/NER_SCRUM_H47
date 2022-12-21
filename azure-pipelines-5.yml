@@ -40,7 +40,8 @@ steps:
     azureSubscription: 'Azure for Students(d9e0134f-4164-464c-9d04-a7fd942d9a03)'
     appType: 'webApp'
     WebAppName: 'NREPortalProd'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/*.zip'
-    
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
 - task: PublishBuildArtifacts@1
+
 
