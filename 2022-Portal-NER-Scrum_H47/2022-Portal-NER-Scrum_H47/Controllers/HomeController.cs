@@ -43,5 +43,25 @@ namespace _2022_Portal_NER_Scrum_H47.Controllers
         {
             return View();
         }
+
+        public IActionResult Graph()
+        {
+            return View();
+        }
+
+        public IActionResult Hydro()
+        {
+            return View();
+        }
+
+        public IActionResult Pv()
+        {
+            return View();
+        }
+
+        public IActionResult BioGaz()
+        {
+            return View();
+        }
     }
 }

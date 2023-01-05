@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "Graph";
+}
+
+<h1>Graph</h1>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Mois', '2012', '2017', '2022'],
+            ['Janvier', 5698, 5423, 5547],
+            ['Février', 5082, 5123, 4957],
+            ['Mars', 5432, 5220, 5206],
+            ['Avril', 4842, 4725, 4681],
+            ['Mai', 5569, 5123, 4925],
+            ['Juin', 5716, 5755, 5642],
+            ['Juillet', 5846, 5925, 6205],
+            ['Aout', 5564, 5578, 5693],
+            ['Septembre', 5601, 5233, 4444],
+            ['Octobre', 5651, 4852, 3870],
+            ['Novembre', 5383, 4885, 5223],
+            ['Décembre', 5080, 4888, 5320]
+        ]);
+
+        var options = {
+            title: 'Production en temps réel \'[GWh]',
+            legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('nre_production'));
+
+        chart.draw(data, options);
+    }</script>
+
+<script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Energie', 'Representation'],
+            ['Eolienne avec vent', 15263],
+            ['Accumulateur Eolien', 18746]
+        ]);
+
+        var options = {
+            title: 'Representation de energie éolienne des 10 dernières annèes [GWh]'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('nre_donutchart'));
+        chart.draw(data, options);
+    }</script>
+
+<div class="text-center">
+    <h1 class="display-4">Energie renouvelable éolienne</h1>
+
+    <div class="row">
+        <div id="nre_production" style="width: 900px; height: 500px"></div>
+        <div id="graphNavigationPanel" class="navigationPanel">
+            <a asp-action="PV"><img src="~/Images/sun.png" class="navigationImage" /></a>
+            <a asp-action="Hydro"> <img src="~/Images/hydro.png" class="navigationImage" /></a>
+            <a asp-action="Graph"> <img src="~/Images/wind.png" class="navigationImage" /></a>
+            <a asp-action="BioGaz"> <img src="~/Images/biogaz.png" class="navigationImage" /></a>
+        </div>
+    </div>
+    <div id="nre_donutchart" style="width: 900px; height: 500px;"></div>
+</div>

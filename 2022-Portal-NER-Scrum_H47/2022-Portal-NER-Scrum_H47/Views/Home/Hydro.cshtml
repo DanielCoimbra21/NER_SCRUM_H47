@@ -1,21 +1,14 @@
-﻿@* Main title *@
-<center>
-    <h1>Nouvelles énergies renouvelables</h1>
-</center>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
 
-@* Back buttons and current page *@
-<div>
-    <a asp-action="Index">Home</a> > <a asp-action="Map">NER</a>
-</div>
+<h1>Hydro</h1>
 
-@* Map displayed *@
 <div id="mapNavigationPanel" class="navigationPanel">
     <a asp-action="PV"><img src="~/Images/sun.png" class="navigationImage" /></a>
     <a asp-action="Hydro"> <img src="~/Images/hydro.png" class="navigationImage" /></a>
     <a asp-action="Graph"> <img src="~/Images/wind.png" class="navigationImage" /></a>
     <a asp-action="BioGaz"> <img src="~/Images/biogaz.png" class="navigationImage" /></a>
 </div>
-<div class="centeredDiv">
-    <img src="~/Images/Map.png" />
-</div>
-
