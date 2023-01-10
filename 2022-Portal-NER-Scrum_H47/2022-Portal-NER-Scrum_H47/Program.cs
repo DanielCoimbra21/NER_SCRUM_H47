@@ -12,7 +12,7 @@ namespace _2022_Portal_NER_Scrum_H47
     public class Program
     {
         /// <summary>
-        /// This is the main class
+        /// This is the main Class
         /// </summary>
         /// <param name="args"></param>
         public static void Main(string[] args)
