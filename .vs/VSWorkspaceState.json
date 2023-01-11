@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\2022-Portal-NER-Scrum_H47",
+    "\\2022-Portal-NER-Scrum_H47\\2022-Portal-NER-Scrum_H47",
+    "\\2022-Portal-NER-Scrum_H47\\2022-Portal-NER-Scrum_H47\\Views",
+    "\\2022-Portal-NER-Scrum_H47\\2022-Portal-NER-Scrum_H47\\Views\\Home"
   ],
-  "SelectedNode": "\\Test.cs",
+  "SelectedNode": "\\2022-Portal-NER-Scrum_H47\\2022-Portal-NER-Scrum_H47\\Views\\Home\\Graph.cshtml",
   "PreviewInSolutionExplorer": false
 }
